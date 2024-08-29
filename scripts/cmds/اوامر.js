@@ -41,9 +41,9 @@ module.exports = {
 				+ "\n❐ لـࢪؤيـة تفاصيـل أحـد الأوامـࢪ\n    الموجودة في البوت استخدم:    \n    %5اوامر [الامࢪ الذي تࢪيده]    \n    مـثــال: %5اوامر اكاني    "
 				+ "\n├────────⭔"
 				+ "\n│ %6"
-				+ "\n╰─────────────⭓",
+				+ "\n╰─────────────⭓"
 			        + "\n             عدد الأوامر: %4             "
-			        + "\n          الصفحة: %2 من %3          "
+			        + "\n          الصفحة: %2 من %3          ",
 			help2: "%1├───────⭔"
 				+ "\n│ » Currently, the bot has %2 commands that can be used"
 				+ "\n│ » Type %3help <command name> to view the details of how to use that command"
