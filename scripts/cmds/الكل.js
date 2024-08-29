@@ -1,18 +1,16 @@
 module.exports = {
 	config: {
-		name: "all",
+		name: "الكل",
 		version: "1.2",
 		author: "NTKhang",
 		countDown: 5,
 		role: 1,
 		description: {
-			vi: "Tag tất cả thành viên trong nhóm chat của bạn",
-			en: "Tag all members in your group chat"
+			en: "تعمل تاغ للكل"
 		},
 		category: "box chat",
 		guide: {
-			vi: "   {pn} [nội dung | để trống]",
-			en: "   {pn} [content | empty]"
+			en: "   {pn} [النص الذي تريد ارفاقه مع التاغ | الامر فقط]"
 		}
 	},
 
