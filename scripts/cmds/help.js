@@ -37,13 +37,13 @@ module.exports = {
 			help: "╭─────────────⭓"
 				+ "\n%1"
 				+ "\n├─────⭔"
-				+ "\n│ Page [ %2/%3 ]"
-				+ "\n│ Currently, the bot has %4 commands that can be used"
-				+ "\n│ » Type %5help <page> to view the command list"
-				+ "\n│ » Type %5help to view the details of how to use that command"
+				+ "\n❐ لـࢪؤيـة الصـفـحــات الأخــࢪى\n    اڪـتــب الامــࢪ وبـعـده ࢪقــم    \n    الـصـفـحــة مـثــال: .اوامر 2    "
+				+ "\n❐ لـࢪؤيـة تفاصيـل أحـد الأوامـࢪ\n    الموجودة في البوت استخدم:    \n    %5اوامر [الامࢪ الذي تࢪيده]    \n    مـثــال: %5اوامر اكاني    "
 				+ "\n├────────⭔"
 				+ "\n│ %6"
 				+ "\n╰─────────────⭓",
+			        + "\n             عدد الأوامر: %4             "
+			        + "\n          الصفحة: %2 من %3          "
 			help2: "%1├───────⭔"
 				+ "\n│ » Currently, the bot has %2 commands that can be used"
 				+ "\n│ » Type %3help <command name> to view the details of how to use that command"
@@ -170,7 +170,7 @@ module.exports = {
 
 				const returnArray = allPage[page - 1] || [];
 				const startNumber = (page - 1) * numberOfOnePage + 1;
-				msg += (returnArray || []).reduce((text, item, index) => text += `│ ${index + startNumber}${index + startNumber < 10 ? " " : ""}. ${item.data}\n`, '').slice(0, -1);
+				msg += (returnArray || []).reduce((text, item, index) => text += `❐ ${index + startNumber}${index + startNumber < 10 ? " " : ""}. ${item.data}\n`, '').slice(0, -1);
 				await message.reply(getLang("help", msg, page, totalPage, commands.size, prefix, doNotDelete));
 			}
 			else if (sortHelp == "category") {
