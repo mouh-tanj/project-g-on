@@ -11,8 +11,8 @@ module.exports = {
 		},
 		category: "box chat",
 		guide: {
-			en: "   {pn} [تشغيل | ايقاف]: turn on/off the mode only admin of group can use bot"
-				+ "\n   {pn} noti [on | off]: turn on/off the notification when user is not admin of group use bot"
+			en: "   {pn} [تشغيل | ايقاف]: تشغيل/إيقاف التقييد، يمكن لمسؤولي المجموعة فقط استخدام البوت"
+				+ "\n   {pn} [اشعار] [تشغيل | ايقاف]: بتشغيل/إيقاف اشعار التقييد، عندما لا يكون المستخدم مسؤولاً في المجموعة"
 		}
 	},
 
