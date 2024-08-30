@@ -18,11 +18,11 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: "🌹✨ ---- تنبيه ---- ✨🌹\n\nتم تقييد استخدام البوت في\n هذه المجموعة، ولن يتمكن\n  أحد من استخدامه 🤭❌",
+			turnedOn: "🌹✨ ---- تنبيه ---- ✨🌹\n\nتم تقييد استخدام البوت في\n هذه المجموعة، ولن يتمكن\n  أحد من استخدامه 🤭❌\nفـقـــط الـمــســـؤولـــون 🙆‍♀️",
 			turnedOff: "🌹✨ ---- تنبيه ---- ✨🌹\n\nتم إلغاء تقييد استخدام البوت\nفي هذه المجموعة، وسيتمكن\nكل الأعضاء من استخدامه ✅",
-			turnedOnNoti: "Turned on the notification when user is not admin of group use bot",
-			turnedOffNoti: "Turned off the notification when user is not admin of group use bot",
-			syntaxError: "Syntax error, only use {pn} on or {pn} off"
+			turnedOnNoti: "🌹✨ ---- تنبيه ---- ✨🌹\n\nتم تفعيل إشعار تقييد البوت\nفـي هـذه المـجـمــوعـة ✅",
+			turnedOffNoti: "🌹✨ ---- تنبيه ---- ✨🌹\n\nتم إلغـاء تفعيـل إشعـار تقييـد\nالبوت في هذه المجموعة ✅",
+			syntaxError: "{pn} تشيل: لتفعيل التقييد ✅\n{pn} ايقاف: لإيقاف تفعيله ❌"
 		}
 	},
 
@@ -32,15 +32,15 @@ module.exports = {
 		let keySetData = "data.onlyAdminBox";
 		let indexGetVal = 0;
 
-		if (args[0] == "noti") {
+		if (args[0] == "اشعار") {
 			isSetNoti = true;
 			indexGetVal = 1;
 			keySetData = "data.hideNotiMessageOnlyAdminBox";
 		}
 
-		if (args[indexGetVal] == "on")
+		if (args[indexGetVal] == "تشغيل")
 			value = true;
-		else if (args[indexGetVal] == "off")
+		else if (args[indexGetVal] == "ايقاف")
 			value = false;
 		else
 			return message.reply(getLang("syntaxError"));
