@@ -1,7 +1,7 @@
 module.exports = {
 	config: {
 		name: "تقييد",
-		aliases: ["الادمن-فقط", "adboxonly", "adminboxonly"],
+		aliases: ["الادمن-فقط"],
 		version: "1.3",
 		author: "NTKhang",
 		countDown: 5,
